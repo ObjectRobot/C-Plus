@@ -1,5 +1,6 @@
 // include pre-processor directives
 #include <iostream>
+#include <string>
 
 #define FIRST_NAME "Oliver"
 #define LAST_NAME "Kokolee Jr."

@@ -23,8 +23,8 @@ int main() {
     // we need to specify that it belongs to the std namespace. One
     // way to do this is by using th escope resolution operator ::
     // std::cout << "Hello World!";
-    cout << "Hello World!";
-   //  output();
-    // input();
+    // cout << "Hello World!";
+    //  output();
+    //  input();
     decisions1();
 }

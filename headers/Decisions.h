@@ -15,26 +15,26 @@ void decisions1(void) {
 
     // use if statement
     if (num < 40000.0) {
-        printf("Num (%.2f) is less than 40000.0.\n", num); // displayed
+        cout << "Num (%.2f) is less than 40000.0.\n" << num << endl; // displayed
     }
 
     num += num;
    
     // use if-else statement
     if(num < 40000.0) {
-        printf("Num (%.2f) is less than 40000.0.\n", num); // not displayed
+        cout << "Num (%.2f) is less than 40000.0.\n" << num << endl; // not displayed
     } else {
-    printf("Num (%.2f) is not less than 40000.0.\n", num); // displayed
+        cout << "Num (%.2f) is not less than 40000.0.\n" << num << endl; // displayed
     }
 
     num = 0.0;
 
     // use if-else-if statement
     if (num == 0.0) {
-        printf("Num (%.2f) is equal to 0.0.\n", num); // displayed
+        cout << "Num (%.2f) is equal to 0.0.\n" << num << endl; // displayed
     } else if (num < 40000.0) {
-        printf("Num (%.2f) is greater than 40000.0.\n", num); // not displayed
+        cout << "Num (%.2f) is greater than 40000.0.\n" << num << endl; // not displayed
     } else {
-        printf("Num (%.2f) is not less than 40000.0 and is not equal to 0.0\n", num); // not displayed
+        cout << "Num (%.2f) is not less than 40000.0 and is not equal to 0.0\n" << num << endl; // not displayed
     }
 }
