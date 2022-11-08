@@ -1,5 +1,6 @@
 // include pre-processor directive
 #include <iostream>
+#include <iomanip>
 
 #define NUM 34567.80
 
@@ -13,28 +14,33 @@ void decisions1(void) {
     // initialize it using constant defined in header file
     float num = NUM;
 
+    // show decimal point and trailing zeros on the output stream object
+    cout << fixed << showpoint;
+    // show three digits to the right of the decimal on the output stream object
+    cout << setprecision(3);
+    
     // use if statement
     if (num < 40000.0) {
-        cout << "Num (%.2f) is less than 40000.0.\n" << num << endl; // displayed
+    cout << "Num " << num << " is less than 40000.0." << endl;
     }
 
     num += num;
    
     // use if-else statement
-    if(num < 40000.0) {
-        cout << "Num (%.2f) is less than 40000.0.\n" << num << endl; // not displayed
+    if (num < 40000.0) {
+    cout << "Num " << num << " is less than 40000.0." << endl; // not displayed
     } else {
-        cout << "Num (%.2f) is not less than 40000.0.\n" << num << endl; // displayed
+    cout << "Num " << num << " is not less than 40000.0." << endl;  // displayed
     }
 
     num = 0.0;
 
     // use if-else-if statement
-    if (num == 0.0) {
-        cout << "Num (%.2f) is equal to 0.0.\n" << num << endl; // displayed
+   if (num == 0.0) {
+    cout << "Num " << num << " is equal to 0.0." << endl; // displayed
     } else if (num < 40000.0) {
-        cout << "Num (%.2f) is greater than 40000.0.\n" << num << endl; // not displayed
+    cout << "Num " << num << " is less than 40000.0." << endl; // not displayed
     } else {
-        cout << "Num (%.2f) is not less than 40000.0 and is not equal to 0.0\n" << num << endl; // not displayed
+    cout << "Num " << num << " is not less than 40000.0 and is not equal to 0.0." << endl; // not displayed
     }
 }
